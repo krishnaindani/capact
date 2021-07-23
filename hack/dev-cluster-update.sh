@@ -25,7 +25,7 @@ main() {
     export DOCKER_TAG=${DOCKER_TAG:-"dev-$RANDOM"}
     export DOCKER_REPOSITORY=${DOCKER_REPOSITORY:-"local"}
     export REPO_DIR=$REPO_ROOT_DIR
-    export KIND_CLUSTER_NAME=${KIND_CLUSTER_NAME:-${KIND_DEV_CLUSTER_NAME}}
+    export CLUSTER_NAME=${KIND_CLUSTER_NAME:-${KIND_DEV_CLUSTER_NAME}}
     export CLUSTER_TYPE="kind"
     export PRINT_INSECURE_NOTES="true"
     capact::install
